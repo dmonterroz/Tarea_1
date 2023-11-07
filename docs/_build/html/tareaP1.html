@@ -1,0 +1,1509 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>2. &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tareaP1';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    2.
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FtareaP1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/tareaP1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>2.</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">2.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">5</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>2.<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>Cree una instancia de base de dastos en Docker para solucinar las consultas</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1>3.<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h1>
+<p>Cree la imagen Docker y la base de datos con la siguiente información de conexión.</p>
+<p>Host: localhost</p>
+<p>Port: 5342</p>
+<p>Database Name: myname_db</p>
+<p>User Name: myname_user</p>
+<p>Password: password</p>
+<p>con este codigo:</p>
+<p>“docker run –name myname_db -e POSTGRES_USER=myname_user -e POSTGRES_PASSWORD=password -p 5342:5432 -d postgres”</p>
+<p>me conecte con</p>
+<p>“docker exec -it myname_db bash” despues ” psql -U myname_user –password” y finalmente escribir la contraseña.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id3">
+<h1>4.<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h1>
+<p>cree una conexión y un cursor para I) Crear la tabla nombrada: employees y explicar que tarea realiza la consulta realizada y mostrar en pantalla la tabla</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+<span class="kn">from</span> <span class="nn">psycopg2</span> <span class="kn">import</span> <span class="n">Error</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="c1"># Parámetros de conexión</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;5342&quot;</span>
+<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+
+<span class="c1"># Establecer conexión</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;DROP TABLE IF EXISTS employees&#39;&#39;&#39;</span><span class="p">)</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;CREATE TABLE employees</span>
+<span class="s1">                ( employee_id INTEGER</span>
+<span class="s1">                , first_name VARCHAR(20)</span>
+<span class="s1">                , last_name VARCHAR(25)</span>
+<span class="s1">                , email VARCHAR(25)</span>
+<span class="s1">                , phone_number VARCHAR(20)</span>
+<span class="s1">                , hire_date DATE</span>
+<span class="s1">                , job_id VARCHAR(10)</span>
+<span class="s1">                , salary NUMERIC(8,2)</span>
+<span class="s1">                , commission_pct NUMERIC(2,2)</span>
+<span class="s1">                , manager_id INTEGER</span>
+<span class="s1">                , department_id INTEGER</span>
+<span class="s1">                ) ;</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;CREATE UNIQUE INDEX emp_emp_id_pk</span>
+<span class="s1">               ON employees (employee_id) ;&#39;&#39;&#39;</span><span class="p">)</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;ALTER TABLE employees ADD PRIMARY KEY (employee_id);&#39;&#39;&#39;</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1">#cursor.execute(&#39;&#39;&#39;&#39;&#39;&#39;)</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;SELECT * FROM employees LIMIT 10;&#39;&#39;&#39;</span><span class="p">)</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;SELECT count(1) FROM employees;&#39;&#39;&#39;</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>No hay respuesta a esta sentencia.</p>
+<p>II) Crear la tabla courses con las siguientes columnas</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1">#cursor.execute(&#39;&#39;&#39;&#39;&#39;&#39;)</span>
+<span class="n">create_table_query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">CREATE TABLE courses (</span>
+<span class="s2">    course_id SERIAL PRIMARY KEY,</span>
+<span class="s2">    course_name VARCHAR(60),</span>
+<span class="s2">    course_author VARCHAR(40),</span>
+<span class="s2">    course_status VARCHAR(20),</span>
+<span class="s2">    course_published_dt DATE</span>
+<span class="s2">); &quot;&quot;&quot;</span>
+
+<span class="c1">#cursor.execute(&#39;&#39;&#39;&#39;&#39;&#39;)</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">create_table_query</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO courses (course_name, course_author, course_status, course_published_dt) VALUES (&#39;Programming using Python&#39;, &#39;Bob Dillon&#39;, &#39;published&#39;, &#39;2020-09-30&#39;)&quot;</span><span class="p">);</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO courses (course_name, course_author, course_status, course_published_dt) VALUES (&#39;Data Engineering using Python&#39;, &#39;Bob Dillon&#39;, &#39;published&#39;, &#39;2020-07-15&#39;)&quot;</span><span class="p">);</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO courses (course_name, course_author, course_status) VALUES (&#39;Data Engineering using Scala&#39;, &#39;Elvis Presly&#39;, &#39;draft&#39;)&quot;</span><span class="p">);</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO courses (course_name, course_author, course_status, course_published_dt) VALUES (&#39;Programming using Scala&#39;, &#39;Elvis Presly&#39;, &#39;published&#39;,&#39;2020-05-12&#39;)&quot;</span><span class="p">);</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO courses (course_name, course_author, course_status, course_published_dt) VALUES (&#39;Programming using Java&#39;, &#39;Mike Jack&#39;, &#39;inactive&#39;, &#39;2020-08-10&#39;)&quot;</span><span class="p">);</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO courses (course_name, course_author, course_status, course_published_dt) VALUES (&#39;Web Applications-Python Flask&#39;, &#39;Bob Dillon&#39;, &#39;inactive&#39;, &#39;2020-07-20&#39;)&quot;</span><span class="p">);</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO courses (course_name, course_author, course_status) VALUES (&#39;Web Applications-Java Spring&#39;, &#39;Mike Jack&#39;, &#39;draft&#39;)&quot;</span><span class="p">);</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO courses (course_name, course_author, course_status) VALUES (&#39;Pipeline Orchestraction-Python&#39;, &#39;Bob Dillon&#39;, &#39;draft&#39;)&quot;</span><span class="p">);</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO courses (course_name, course_author, course_status, course_published_dt) VALUES (&#39;Streaming Pipelines-Python&#39;, &#39;Bob Dillon&#39;, &#39;published&#39;,&#39;2020-10-05&#39;)&quot;</span><span class="p">);</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO courses (course_name, course_author, course_status, course_published_dt) VALUES (&#39;Web Applications Scala Play&#39;, &#39;Elvis Presly&#39;, &#39;inactive&#39;,&#39;2020-09-30&#39;)&quot;</span><span class="p">);</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO courses (course_name, course_author, course_status, course_published_dt) VALUES (&#39;Web Application-Python Django&#39;, &#39;Bob Dillon&#39;, &#39;published&#39;,&#39;2020-06-23&#39;)&quot;</span><span class="p">);</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO courses (course_name, course_author, course_status, course_published_dt) VALUES (&#39;Server Automation-Ansible&#39;, &#39;Uncle Sam&#39;, &#39;published&#39;,&#39;2020-07-05&#39;)&quot;</span><span class="p">);</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1"># Eliminar cursos inactivos</span>
+<span class="n">delete_query</span> <span class="o">=</span> <span class="s2">&quot;DELETE FROM courses WHERE course_status = &#39;inactive&#39;;&quot;</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">delete_query</span><span class="p">)</span>
+
+<span class="c1"># Confirmar los cambios</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="c1"># Obtener el número total de filas eliminadas</span>
+<span class="n">total_deleted</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">rowcount</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;borradas:&quot;</span><span class="p">,</span> <span class="n">total_deleted</span><span class="p">)</span>
+
+
+
+<span class="c1"># Confirmar los cambios</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="c1"># Cerrar el cursor y la conexión</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">SELECT course_author, COUNT(*) AS course_count</span>
+<span class="s1">FROM courses</span>
+<span class="s1">GROUP BY course_author</span>
+<span class="s1">ORDER BY course_author ASC</span>
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+
+<span class="c1"># Recopilar los resultados en una lista de registros</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="c1"># Imprimir el encabezado</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Recuento de cursos por autor:&quot;</span><span class="p">)</span>
+
+<span class="c1"># Iterar a través de los registros y mostrar el autor y el recuento</span>
+<span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+    <span class="n">author</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Autor: </span><span class="si">{</span><span class="n">author</span><span class="si">}</span><span class="s2">, Recuento: </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="c1"># Cerrar el cursor y la conexión</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Recuento de cursos por autor:
+Autor: Bob Dillon, Recuento: 5
+Autor: Elvis Presly, Recuento: 2
+Autor: Mike Jack, Recuento: 1
+Autor: Uncle Sam, Recuento: 1
+</pre></div>
+</div>
+</div>
+</div>
+<p>VI) Crear la base de datos users</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">CREATE TABLE users(</span>
+<span class="s1">    user_id SERIAL PRIMARY KEY,</span>
+<span class="s1">    user_first_name VARCHAR(30),</span>
+<span class="s1">    user_last_name VARCHAR(30),</span>
+<span class="s1">    user_email_id VARCHAR(50),</span>
+<span class="s1">    user_gender VARCHAR(1),</span>
+<span class="s1">    user_unique_id VARCHAR(15),</span>
+<span class="s1">    user_phone_no VARCHAR(20),</span>
+<span class="s1">    user_dob DATE,</span>
+<span class="s1">    created_ts TIMESTAMP</span>
+<span class="s1">)</span>
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+    
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="c1"># Cerrar el cursor y la conexión</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Inserte los siguientes valores</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">insert into users (</span>
+<span class="s1">    user_first_name, user_last_name, user_email_id, user_gender, </span>
+<span class="s1">    user_unique_id, user_phone_no, user_dob, created_ts</span>
+<span class="s1">) VALUES</span>
+<span class="s1">    (&#39;Giuseppe&#39;, &#39;Bode&#39;, &#39;gbode0@imgur.com&#39;, &#39;M&#39;, &#39;88833-8759&#39;, </span>
+<span class="s1">     &#39;+86 (764) 443-1967&#39;, &#39;1973-05-31&#39;, &#39;2018-04-15 12:13:38&#39;),</span>
+<span class="s1">    (&#39;Lexy&#39;, &#39;Gisbey&#39;, &#39;lgisbey1@mail.ru&#39;, &#39;F&#39;, &#39;262501-029&#39;, </span>
+<span class="s1">     &#39;+86 (751) 160-3742&#39;, &#39;2003-05-31&#39;, &#39;2020-12-29 06:44:09&#39;),</span>
+<span class="s1">    (&#39;Karel&#39;, &#39;Claringbold&#39;, &#39;kclaringbold2@yale.edu&#39;, &#39;F&#39;, &#39;391-33-2823&#39;, </span>
+<span class="s1">     &#39;+62 (445) 471-2682&#39;, &#39;1985-11-28&#39;, &#39;2018-11-19 00:04:08&#39;),</span>
+<span class="s1">    (&#39;Marv&#39;, &#39;Tanswill&#39;, &#39;mtanswill3@dedecms.com&#39;, &#39;F&#39;, &#39;1195413-80&#39;, </span>
+<span class="s1">     &#39;+62 (497) 736-6802&#39;, &#39;1998-05-24&#39;, &#39;2018-11-19 16:29:43&#39;),</span>
+<span class="s1">    (&#39;Gertie&#39;, &#39;Espinoza&#39;, &#39;gespinoza4@nationalgeographic.com&#39;, &#39;M&#39;, &#39;471-24-6869&#39;, </span>
+<span class="s1">     &#39;+249 (687) 506-2960&#39;, &#39;1997-10-30&#39;, &#39;2020-01-25 21:31:10&#39;),</span>
+<span class="s1">    (&#39;Saleem&#39;, &#39;Danneil&#39;, &#39;sdanneil5@guardian.co.uk&#39;, &#39;F&#39;, &#39;192374-933&#39;, </span>
+<span class="s1">     &#39;+63 (810) 321-0331&#39;, &#39;1992-03-08&#39;, &#39;2020-11-07 19:01:14&#39;),</span>
+<span class="s1">    (&#39;Rickert&#39;, &#39;O&#39;&#39;Shiels&#39;, &#39;roshiels6@wikispaces.com&#39;, &#39;M&#39;, &#39;749-27-47-52&#39;, </span>
+<span class="s1">     &#39;+86 (184) 759-3933&#39;, &#39;1972-11-01&#39;, &#39;2018-03-20 10:53:24&#39;),</span>
+<span class="s1">    (&#39;Cybil&#39;, &#39;Lissimore&#39;, &#39;clissimore7@pinterest.com&#39;, &#39;M&#39;, &#39;461-75-4198&#39;, </span>
+<span class="s1">     &#39;+54 (613) 939-6976&#39;, &#39;1978-03-03&#39;, &#39;2019-12-09 14:08:30&#39;),</span>
+<span class="s1">    (&#39;Melita&#39;, &#39;Rimington&#39;, &#39;mrimington8@mozilla.org&#39;, &#39;F&#39;, &#39;892-36-676-2&#39;, </span>
+<span class="s1">     &#39;+48 (322) 829-8638&#39;, &#39;1995-12-15&#39;, &#39;2018-04-03 04:21:33&#39;),</span>
+<span class="s1">    (&#39;Benetta&#39;, &#39;Nana&#39;, &#39;bnana9@google.com&#39;, &#39;M&#39;, &#39;197-54-1646&#39;, </span>
+<span class="s1">     &#39;+420 (934) 611-0020&#39;, &#39;1971-12-07&#39;, &#39;2018-10-17 21:02:51&#39;),</span>
+<span class="s1">    (&#39;Gregorius&#39;, &#39;Gullane&#39;, &#39;ggullanea@prnewswire.com&#39;, &#39;F&#39;, &#39;232-55-52-58&#39;, </span>
+<span class="s1">     &#39;+62 (780) 859-1578&#39;, &#39;1973-09-18&#39;, &#39;2020-01-14 23:38:53&#39;),</span>
+<span class="s1">    (&#39;Una&#39;, &#39;Glayzer&#39;, &#39;uglayzerb@pinterest.com&#39;, &#39;M&#39;, &#39;898-84-336-6&#39;, </span>
+<span class="s1">     &#39;+380 (840) 437-3981&#39;, &#39;1983-05-26&#39;, &#39;2019-09-17 03:24:21&#39;),</span>
+<span class="s1">    (&#39;Jamie&#39;, &#39;Vosper&#39;, &#39;jvosperc@umich.edu&#39;, &#39;M&#39;, &#39;247-95-68-44&#39;, </span>
+<span class="s1">     &#39;+81 (205) 723-1942&#39;, &#39;1972-03-18&#39;, &#39;2020-07-23 16:39:33&#39;),</span>
+<span class="s1">    (&#39;Calley&#39;, &#39;Tilson&#39;, &#39;ctilsond@issuu.com&#39;, &#39;F&#39;, &#39;415-48-894-3&#39;, </span>
+<span class="s1">     &#39;+229 (698) 777-4904&#39;, &#39;1987-06-12&#39;, &#39;2020-06-05 12:10:50&#39;),</span>
+<span class="s1">    (&#39;Peadar&#39;, &#39;Gregorowicz&#39;, &#39;pgregorowicze@omniture.com&#39;, &#39;M&#39;, &#39;403-39-5-869&#39;, </span>
+<span class="s1">     &#39;+7 (267) 853-3262&#39;, &#39;1996-09-21&#39;, &#39;2018-05-29 23:51:31&#39;),</span>
+<span class="s1">    (&#39;Jeanie&#39;, &#39;Webling&#39;, &#39;jweblingf@booking.com&#39;, &#39;F&#39;, &#39;399-83-05-03&#39;, </span>
+<span class="s1">     &#39;+351 (684) 413-0550&#39;, &#39;1994-12-27&#39;, &#39;2018-02-09 01:31:11&#39;),</span>
+<span class="s1">    (&#39;Yankee&#39;, &#39;Jelf&#39;, &#39;yjelfg@wufoo.com&#39;, &#39;F&#39;, &#39;607-99-0411&#39;, </span>
+<span class="s1">     &#39;+1 (864) 112-7432&#39;, &#39;1988-11-13&#39;, &#39;2019-09-16 16:09:12&#39;),</span>
+<span class="s1">    (&#39;Blair&#39;, &#39;Aumerle&#39;, &#39;baumerleh@toplist.cz&#39;, &#39;F&#39;, &#39;430-01-578-5&#39;, </span>
+<span class="s1">     &#39;+7 (393) 232-1860&#39;, &#39;1979-11-09&#39;, &#39;2018-10-28 19:25:35&#39;),</span>
+<span class="s1">    (&#39;Pavlov&#39;, &#39;Steljes&#39;, &#39;psteljesi@macromedia.com&#39;, &#39;F&#39;, &#39;571-09-6181&#39;, </span>
+<span class="s1">     &#39;+598 (877) 881-3236&#39;, &#39;1991-06-24&#39;, &#39;2020-09-18 05:34:31&#39;),</span>
+<span class="s1">    (&#39;Darn&#39;, &#39;Hadeke&#39;, &#39;dhadekej@last.fm&#39;, &#39;M&#39;, &#39;478-32-02-87&#39;, </span>
+<span class="s1">     &#39;+370 (347) 110-4270&#39;, &#39;1984-09-04&#39;, &#39;2018-02-10 12:56:00&#39;),</span>
+<span class="s1">    (&#39;Wendell&#39;, &#39;Spanton&#39;, &#39;wspantonk@de.vu&#39;, &#39;F&#39;, null, </span>
+<span class="s1">     &#39;+84 (301) 762-1316&#39;, &#39;1973-07-24&#39;, &#39;2018-01-30 01:20:11&#39;),</span>
+<span class="s1">    (&#39;Carlo&#39;, &#39;Yearby&#39;, &#39;cyearbyl@comcast.net&#39;, &#39;F&#39;, null, </span>
+<span class="s1">     &#39;+55 (288) 623-4067&#39;, &#39;1974-11-11&#39;, &#39;2018-06-24 03:18:40&#39;),</span>
+<span class="s1">    (&#39;Sheila&#39;, &#39;Evitts&#39;, &#39;sevittsm@webmd.com&#39;, null, &#39;830-40-5287&#39;,</span>
+<span class="s1">     null, &#39;1977-03-01&#39;, &#39;2020-07-20 09:59:41&#39;),</span>
+<span class="s1">    (&#39;Sianna&#39;, &#39;Lowdham&#39;, &#39;slowdhamn@stanford.edu&#39;, null, &#39;778-0845&#39;, </span>
+<span class="s1">     null, &#39;1985-12-23&#39;, &#39;2018-06-29 02:42:49&#39;),</span>
+<span class="s1">    (&#39;Phylys&#39;, &#39;Aslie&#39;, &#39;paslieo@qq.com&#39;, &#39;M&#39;, &#39;368-44-4478&#39;, </span>
+<span class="s1">     &#39;+86 (765) 152-8654&#39;, &#39;1984-03-22&#39;, &#39;2019-10-01 01:34:28&#39;)</span>
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+    
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="c1"># Cerrar el cursor y la conexión</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>VII) Obtenga el número de usuarios creados por año. Utilice la tabla de usuarios para este ejercicio.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+
+<span class="c1"># Parámetros de conexión</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;5342&quot;</span>
+<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">SELECT</span>
+<span class="s1">    date_part(&#39;year&#39;, created_ts) AS created_year,</span>
+<span class="s1">    COUNT(*) AS user_count</span>
+<span class="s1">FROM</span>
+<span class="s1">    users</span>
+<span class="s1">GROUP BY</span>
+<span class="s1">    created_year</span>
+<span class="s1">ORDER BY</span>
+<span class="s1">    created_year;</span>
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+
+<span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+    <span class="n">created_year</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">user_count</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Year: </span><span class="si">{</span><span class="n">created_year</span><span class="si">}</span><span class="s2">, Count: </span><span class="si">{</span><span class="n">user_count</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="c1"># Cerrar el cursor y la conexión</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Year: 2018.0, Count: 13
+Year: 2019.0, Count: 4
+Year: 2020.0, Count: 8
+</pre></div>
+</div>
+</div>
+</div>
+<p>VIII) Obtenga los días de nacimiento de todos los usuarios nacidos en el mes May.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+
+<span class="c1"># Parámetros de conexión</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;5342&quot;</span>
+<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">SELECT</span>
+<span class="s1">    user_id,</span>
+<span class="s1">    user_dob,</span>
+<span class="s1">    user_email_id,</span>
+<span class="s1">    TO_CHAR(user_dob, &#39;FMDay&#39;) AS user_day_of_birth</span>
+<span class="s1">FROM</span>
+<span class="s1">    users</span>
+<span class="s1">WHERE</span>
+<span class="s1">    EXTRACT(MONTH FROM user_dob) = 5</span>
+<span class="s1">ORDER BY</span>
+<span class="s1">    EXTRACT(DAY FROM user_dob);</span>
+
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+
+<span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+    <span class="n">user_id</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">user_dob</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">user_email_id</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">user_day_of_birth</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;User ID: </span><span class="si">{</span><span class="n">user_id</span><span class="si">}</span><span class="s2">, User DOB: </span><span class="si">{</span><span class="n">user_dob</span><span class="si">}</span><span class="s2">, User Email ID: </span><span class="si">{</span><span class="n">user_email_id</span><span class="si">}</span><span class="s2">, User Day of Birth: </span><span class="si">{</span><span class="n">user_day_of_birth</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="c1"># Cerrar el cursor y la conexión</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>User ID: 4, User DOB: 1998-05-24, User Email ID: mtanswill3@dedecms.com, User Day of Birth: Sunday
+User ID: 12, User DOB: 1983-05-26, User Email ID: uglayzerb@pinterest.com, User Day of Birth: Thursday
+User ID: 1, User DOB: 1973-05-31, User Email ID: gbode0@imgur.com, User Day of Birth: Thursday
+User ID: 2, User DOB: 2003-05-31, User Email ID: lgisbey1@mail.ru, User Day of Birth: Saturday
+</pre></div>
+</div>
+</div>
+</div>
+<p>IX) Obtenga los nombres e ids de correo electrónico de los usuarios añadidos en el año 2019.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+
+<span class="c1"># Parámetros de conexión</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;5342&quot;</span>
+<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">SELECT</span>
+<span class="s1">    user_id,</span>
+<span class="s1">    UPPER(CONCAT(user_first_name, &#39; &#39;, user_last_name)) AS user_name,</span>
+<span class="s1">    user_email_id,</span>
+<span class="s1">    created_ts,</span>
+<span class="s1">    EXTRACT(YEAR FROM created_ts) AS created_year</span>
+<span class="s1">FROM</span>
+<span class="s1">    users</span>
+<span class="s1">WHERE</span>
+<span class="s1">    EXTRACT(YEAR FROM created_ts) = 2019</span>
+<span class="s1">ORDER BY</span>
+<span class="s1">    user_name;</span>
+
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+
+<span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+    <span class="n">user_id</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">user_name</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">user_email_id</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">created_ts</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+    <span class="n">created_year</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;User ID: </span><span class="si">{</span><span class="n">user_id</span><span class="si">}</span><span class="s2">, User Name: </span><span class="si">{</span><span class="n">user_name</span><span class="si">}</span><span class="s2">, User Email ID: </span><span class="si">{</span><span class="n">user_email_id</span><span class="si">}</span><span class="s2">, Created Timestamp: </span><span class="si">{</span><span class="n">created_ts</span><span class="si">}</span><span class="s2">, Created Year: </span><span class="si">{</span><span class="n">created_year</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="c1"># Cerrar el cursor y la conexión</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>User ID: 8, User Name: CYBIL LISSIMORE, User Email ID: clissimore7@pinterest.com, Created Timestamp: 2019-12-09 14:08:30, Created Year: 2019
+User ID: 25, User Name: PHYLYS ASLIE, User Email ID: paslieo@qq.com, Created Timestamp: 2019-10-01 01:34:28, Created Year: 2019
+User ID: 12, User Name: UNA GLAYZER, User Email ID: uglayzerb@pinterest.com, Created Timestamp: 2019-09-17 03:24:21, Created Year: 2019
+User ID: 17, User Name: YANKEE JELF, User Email ID: yjelfg@wufoo.com, Created Timestamp: 2019-09-16 16:09:12, Created Year: 2019
+</pre></div>
+</div>
+</div>
+</div>
+<p>X) Obtenga el número de usuarios por género. Utilice la tabla de users para este ejercicio.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+
+<span class="c1"># Parámetros de conexión</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;5342&quot;</span>
+<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">SELECT</span>
+<span class="s1">    CASE</span>
+<span class="s1">        WHEN user_gender = &#39;M&#39; THEN &#39;Male&#39;</span>
+<span class="s1">        WHEN user_gender = &#39;F&#39; THEN &#39;Female&#39;</span>
+<span class="s1">        ELSE &#39;Not Specified&#39;</span>
+<span class="s1">    END AS gender,</span>
+<span class="s1">    COUNT(*) AS user_count</span>
+<span class="s1">FROM</span>
+<span class="s1">    users</span>
+<span class="s1">GROUP BY</span>
+<span class="s1">    gender</span>
+<span class="s1">ORDER BY</span>
+<span class="s1">    user_count DESC;</span>
+
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+
+<span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+    <span class="n">gender</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">user_count</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Gender: </span><span class="si">{</span><span class="n">gender</span><span class="si">}</span><span class="s2">, User Count: </span><span class="si">{</span><span class="n">user_count</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="c1"># Cerrar el cursor y la conexión</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gender: Female, User Count: 13
+Gender: Male, User Count: 10
+Gender: Not Specified, User Count: 2
+</pre></div>
+</div>
+</div>
+</div>
+<p>XII) Obtenga los 4 últimos dígitos de los ids únicos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Parámetros de conexión</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;5342&quot;</span>
+<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">SELECT</span>
+<span class="s1">    user_id,</span>
+<span class="s1">    COALESCE(</span>
+<span class="s1">        CASE</span>
+<span class="s1">            WHEN LENGTH(REPLACE(user_unique_id, &#39;-&#39;, &#39;&#39;)) &gt;= 9</span>
+<span class="s1">            THEN RIGHT(REPLACE(user_unique_id, &#39;-&#39;, &#39;&#39;), 4)</span>
+<span class="s1">            ELSE &#39;Invalid Unique Id&#39;</span>
+<span class="s1">        END,</span>
+<span class="s1">        &#39;Not Specified&#39;</span>
+<span class="s1">    ) AS user_unique_id_last4</span>
+<span class="s1">FROM</span>
+<span class="s1">    users</span>
+<span class="s1">ORDER BY</span>
+<span class="s1">    user_id;</span>
+
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+
+<span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+    <span class="n">user_id</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">user_unique_id_last4</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;User ID: </span><span class="si">{</span><span class="n">user_id</span><span class="si">}</span><span class="s2">, User Unique ID Last 4: </span><span class="si">{</span><span class="n">user_unique_id_last4</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="c1"># Cerrar el cursor y la conexión</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>User ID: 1, User Unique ID Last 4: 8759
+User ID: 2, User Unique ID Last 4: 1029
+User ID: 3, User Unique ID Last 4: 2823
+User ID: 4, User Unique ID Last 4: 1380
+User ID: 5, User Unique ID Last 4: 6869
+User ID: 6, User Unique ID Last 4: 4933
+User ID: 7, User Unique ID Last 4: 4752
+User ID: 8, User Unique ID Last 4: 4198
+User ID: 9, User Unique ID Last 4: 6762
+User ID: 10, User Unique ID Last 4: 1646
+User ID: 11, User Unique ID Last 4: 5258
+User ID: 12, User Unique ID Last 4: 3366
+User ID: 13, User Unique ID Last 4: 6844
+User ID: 14, User Unique ID Last 4: 8943
+User ID: 15, User Unique ID Last 4: 5869
+User ID: 16, User Unique ID Last 4: 0503
+User ID: 17, User Unique ID Last 4: 0411
+User ID: 18, User Unique ID Last 4: 5785
+User ID: 19, User Unique ID Last 4: 6181
+User ID: 20, User Unique ID Last 4: 0287
+User ID: 21, User Unique ID Last 4: Invalid Unique Id
+User ID: 22, User Unique ID Last 4: Invalid Unique Id
+User ID: 23, User Unique ID Last 4: 5287
+User ID: 24, User Unique ID Last 4: Invalid Unique Id
+User ID: 25, User Unique ID Last 4: 4478
+</pre></div>
+</div>
+</div>
+</div>
+<p>XIII) Obtenga el recuento de usuarios en función del código de país.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+
+<span class="c1"># Parámetros de conexión</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;5342&quot;</span>
+<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">SELECT</span>
+<span class="s1">    SUBSTRING(user_phone_no FROM &#39;^</span><span class="se">\\</span><span class="s1">+([0-9]+)&#39;) AS country_code,</span>
+<span class="s1">    COUNT(*) AS user_count</span>
+<span class="s1">FROM</span>
+<span class="s1">    users</span>
+<span class="s1">WHERE</span>
+<span class="s1">    user_phone_no IS NOT NULL AND user_phone_no ~ &#39;^</span><span class="se">\\</span><span class="s1">+[0-9]+&#39;</span>
+<span class="s1">GROUP BY</span>
+<span class="s1">    country_code</span>
+<span class="s1">ORDER BY</span>
+<span class="s1">    country_code DESC;</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+
+<span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+    <span class="n">country_code</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">user_count</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Country Code: </span><span class="si">{</span><span class="n">country_code</span><span class="si">}</span><span class="s2">, User Count: </span><span class="si">{</span><span class="n">user_count</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="c1"># Cerrar el cursor y la conexión</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Country Code: 86, User Count: 4
+Country Code: 84, User Count: 1
+Country Code: 81, User Count: 1
+Country Code: 7, User Count: 2
+Country Code: 63, User Count: 1
+Country Code: 62, User Count: 3
+Country Code: 598, User Count: 1
+Country Code: 55, User Count: 1
+Country Code: 54, User Count: 1
+Country Code: 48, User Count: 1
+Country Code: 420, User Count: 1
+Country Code: 380, User Count: 1
+Country Code: 370, User Count: 1
+Country Code: 351, User Count: 1
+Country Code: 249, User Count: 1
+Country Code: 229, User Count: 1
+Country Code: 1, User Count: 1
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id4">
+<h1>5<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h1>
+<p>Importe los datos del precio de Cardano USD (ADA-USD) en su instancia de base de datos Docker, teniendo en cuenta lo explicado durante esta sección. Luego dibuje un gráfico de candlestick para la criptomoneda. En el siguiente link encontrará el CSV de Cardano: Cardano USD (ADA-USD). Describa lo que puede observar en la serie de tiempo. Realice un análisis exploratorio de datos (EDA) para la serie de tiempo.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Parámetros de conexión</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;5342&quot;</span>
+<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;DROP TABLE IF EXISTS cardano_prices&#39;&#39;&#39;</span><span class="p">)</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;CREATE TABLE cardano_prices (</span>
+<span class="s1">                date DATE,</span>
+<span class="s1">                open NUMERIC,</span>
+<span class="s1">                high NUMERIC,</span>
+<span class="s1">                low NUMERIC,</span>
+<span class="s1">                close NUMERIC,</span>
+<span class="s1">                adj_close NUMERIC,</span>
+<span class="s1">                volume BIGINT);</span>
+<span class="s1">                &#39;&#39;&#39;</span><span class="p">)</span>
+
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Parámetros de conexión</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;5342&quot;</span>
+<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1"># Abrir el archivo CSV</span>
+<span class="n">file</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;C:\Users\hp\Documents\cvs\ADA-USD.csv&#39;</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="c1">#Aqui tienes que poner el link de tu archivo</span>
+    <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="nb">next</span><span class="p">(</span><span class="n">reader</span><span class="p">)</span>  <span class="c1"># Saltar la cabecera</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+        <span class="c1"># Convertir &#39;null&#39; a None</span>
+        <span class="n">row</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;null&#39;</span> <span class="k">else</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">row</span><span class="p">]</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;INSERT INTO cardano_prices (date, open, high, low, close, adj_close, volume) VALUES (</span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">)&quot;</span><span class="p">,</span>
+            <span class="n">row</span>
+        <span class="p">)</span>
+
+<span class="c1"># Confirmar los cambios</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+<span class="c1"># Cerrar el cursor y la conexión</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="c1"># Define la ruta del archivo</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="n">file</span>
+
+
+<span class="n">data_frame</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data_frame</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>  <span class="c1"># Imprime las primeras 5 filas del DataFrame</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>         Date      Open      High       Low     Close  Adj Close      Volume
+0  2017-10-01  0.021678  0.032226  0.017354  0.024969   0.024969  50068700.0
+1  2017-10-02  0.024607  0.030088  0.019969  0.025932   0.025932  57641300.0
+2  2017-10-03  0.025757  0.027425  0.020690  0.020816   0.020816  16997800.0
+3  2017-10-04  0.020864  0.022806  0.020864  0.021931   0.021931   9000050.0
+4  2017-10-05  0.021951  0.022154  0.020859  0.021489   0.021489   5562510.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objects</span> <span class="k">as</span> <span class="nn">go</span>
+
+<span class="c1"># Parámetros de conexión</span>
+<span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;5342&quot;</span>
+<span class="n">dbname</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;myname_user&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+    <span class="n">dbname</span><span class="o">=</span><span class="n">dbname</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="n">password</span>
+<span class="p">)</span>
+
+<span class="c1"># Crear un cursor</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM cardano_prices&quot;</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
+
+<span class="c1"># Crear el gráfico de candlestick</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">go</span><span class="o">.</span><span class="n">Candlestick</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">],</span>
+                <span class="nb">open</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;open&#39;</span><span class="p">],</span>
+                <span class="n">high</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;high&#39;</span><span class="p">],</span>
+                <span class="n">low</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;low&#39;</span><span class="p">],</span>
+                <span class="n">close</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;close&#39;</span><span class="p">])])</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Gráfico de Candlestick de Cardano USD (ADA-USD)&#39;</span><span class="p">,</span>
+                  <span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Fecha&#39;</span><span class="p">,</span>
+                  <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Precio&#39;</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+
+
+<span class="c1"># Cerrar el cursor y la conexión</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\hp\AppData\Local\Temp\ipykernel_15072\2595964484.py:22: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(&quot;SELECT * FROM cardano_prices&quot;, conn)
+</pre></div>
+</div>
+</div>
+</div>
+<p>En el análisis de la serie de tiempo, se observa que en los años previos a 2018, el valor de la criptomoneda Cardano (ADA) se mantuvo en niveles cercanos a cero. Sin embargo, a partir de enero de ese año, se produjo un aumento significativo en el precio, alcanzando aproximadamente 1 dólar. Posteriormente, a lo largo de ese año, el precio experimentó una disminución constante hasta regresar a valores cercanos a cero.</p>
+<p>En 2021, se registró nuevamente un rápido crecimiento en el valor de la moneda, llegando a un pico de alrededor de 2.5 dólares. En julio del mismo año, se produjo otro pico que elevó el precio a aproximadamente 3.2 dólares, y el año 2021 se cerró con un valor cercano a 2.5 dólares.</p>
+<p>Este análisis muestra la naturaleza volátil e impredecible de esta criptomoneda, lo que dificulta la predicción de su comportamiento.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Crear el diagrama de caja</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>  <span class="c1"># Tamaño de la figura</span>
+
+<span class="c1"># Definir el estilo del gráfico (puedes personalizarlo según tus preferencias)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+
+<span class="c1"># Seleccionar los datos del DataFrame</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data_frame</span><span class="p">[[</span><span class="s1">&#39;Open&#39;</span><span class="p">,</span> <span class="s1">&#39;High&#39;</span><span class="p">,</span> <span class="s1">&#39;Low&#39;</span><span class="p">,</span> <span class="s1">&#39;Close&#39;</span><span class="p">,</span> <span class="s1">&#39;Adj Close&#39;</span><span class="p">]]</span>
+
+<span class="c1"># Crear el diagrama de caja</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set2&#39;</span><span class="p">)</span>
+
+<span class="c1"># Agregar un título</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Diagrama de Caja de Precios&#39;</span><span class="p">)</span>
+
+<span class="c1"># Mostrar el gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/e7d146b1b1345d73946b6b75d6c6c2f3a01a3ec2b352fab519673a0d5e4c9d5f.png" src="_images/e7d146b1b1345d73946b6b75d6c6c2f3a01a3ec2b352fab519673a0d5e4c9d5f.png" />
+</div>
+</div>
+<p>Podemos ver como todas las cajas tienen la mayoria de valores entre 0 y 0.5 de precio, asi como tambien su mediana es aproximandamnte 0.21 y como hay muchisimos datos atipicos graficados valores que llegan hasta 3 dolares, y por el bigote que llegas hasta 0.75 se ve que al superar esta cifra ya se considera un valor atipico lo que se contrasta con el grafico de velas ya que la mayor parte del tiempo se ecuentran entre 0 y 0.5 los precios.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">statsmodels.tsa.stattools</span> <span class="kn">import</span> <span class="n">adfuller</span>
+
+<span class="c1"># Seleccionar una columna de precios (por ejemplo, &#39;Close&#39;)</span>
+<span class="n">price_data</span> <span class="o">=</span> <span class="n">data_frame</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span>
+
+<span class="c1"># Reemplazar los valores NaN con la media de la serie</span>
+<span class="n">price_data</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">price_data</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Realizar la prueba de Dickey-Fuller</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">adfuller</span><span class="p">(</span><span class="n">price_data</span><span class="p">)</span>
+
+<span class="c1"># Imprimir los resultados de la prueba</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Estadística de prueba ADF:&#39;</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Valor p:&#39;</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Valores críticos:&#39;</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+
+<span class="c1"># Interpretar los resultados</span>
+<span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mf">0.05</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;La serie temporal es estacionaria (rechazamos la hipótesis nula)&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;La serie temporal no es estacionaria (no podemos rechazar la hipótesis nula)&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Estadística de prueba ADF: -0.5734908237646756
+Valor p: 0.8768602168746882
+Valores críticos: {&#39;1%&#39;: -3.4348616379354793, &#39;5%&#39;: -2.8635325860671696, &#39;10%&#39;: -2.567830836482784}
+La serie temporal no es estacionaria (no podemos rechazar la hipótesis nula)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Valor p: 0.8769: El valor p es mayor que el nivel de significancia típico de 0.05. En este contexto, un valor p alto indica que no podemos rechazar la hipótesis nula. La hipótesis nula en la prueba ADF afirma que los datos de la serie temporal son no estacionarios. Dado que no podemos rechazar la hipótesis nula, podemos concluir que la serie temporal no es estacionaria es decir que sus propiedades estadísticas cambian con el tiempo y, en particular, no mantienen una media, varianza o estructura constante a lo largo de la serie.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">2.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">5</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dina Barrios
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
